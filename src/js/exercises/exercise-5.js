@@ -10,3 +10,23 @@ repetitions(‘list’) // result: “LIiSssTttt”
 repetitions(function) // result: “FUuNnnTtttIiiiiOoooooNnnnnnn”
 
 */
+
+
+function repetitions(text) {
+    let result = "";
+  
+    for (let i = 0; i < text.length; i++) {
+      let letter = text[i];
+      result += letter.toUpperCase();
+
+      for (let j = 0; j < i; j++) {
+        result += letter.toLowerCase();
+      }
+    }
+  
+    return result;
+  }
+  
+  showContent(5, repetitions('code'));
+  showContent(5, repetitions('list'));
+  showContent(5, repetitions('function'));
