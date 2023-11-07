@@ -14,4 +14,4 @@ function peliculasDrama(movies) {
 
 const dramaMovies = peliculasDrama(movies);
 
-showContent(12, dramaMovies)
+showContent(12, dramaMovies);

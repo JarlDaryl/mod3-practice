@@ -25,4 +25,4 @@ function convertirAHashtag(cadena) {
   const hashtag = convertirAHashtag(cadena);
   
 
-  showContent(18, hashtag);
+  showContent(18, hashtag); 
